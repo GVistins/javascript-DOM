@@ -16,4 +16,4 @@ I just chose to call upon all of the elements with the class name of "hide_me"
 
 Your reply here...
 
-I used the command document.getElementsByClassName() to grab all of the elements with the class name "hide_me" and changed their style to none inside a function asigned to the click event in the button id.
+I used the command document.getElementsByClassName() to grab all of the elements with the class name "hide_me" and appended them to a list, the I used a for loop to cycle through each element and hide them individually.
