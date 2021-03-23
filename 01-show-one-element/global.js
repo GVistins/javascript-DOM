@@ -1,4 +1,4 @@
-window.addEventListener("load", function(){
+
 
   // Here is some pseudo-code to help you get started:
 
@@ -14,4 +14,11 @@ window.addEventListener("load", function(){
 
   // 5. Also modify the DOM to hide the "More info..." link.
   
-});
+
+
+const element = query.selector("#more_text_link")
+element.addEventListener("click", function(){
+  const text = query.selector("#more_text_content")
+  text.style("display: shown")
+  element.style("display: none")
+})
