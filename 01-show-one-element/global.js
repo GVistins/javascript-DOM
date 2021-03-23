@@ -16,9 +16,15 @@
   
 
 
-const element = query.selector("#more_text_link")
-element.addEventListener("click", function(){
-  const text = query.selector("#more_text_content")
-  text.style("display: shown")
-  element.style("display: none")
+const element_first = query.selector("#more_text_link");
+element_first.addEventListener("click", function(){
+  const text = query.selector("#more_text_content");
+  text.style("display: shown");
+  element.style("display: none");
+})
+
+const hide_second = query.selector("#button");
+hide_second.addEventListener("click", function(){
+  const class_second = document.getElementsByClassName("hide_me");
+  class_second.style("display:none");
 })
