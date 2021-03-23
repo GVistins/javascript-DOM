@@ -23,10 +23,3 @@ element_first.addEventListener("click", function(){
   element.style("display: none");
 })
 
-const hide_second = query.selector("#button");
-hide_second.addEventListener("click", function(){
-var class_second = document.getElementsByClassName("hide_me");
-  for(f = 0, f < class_second.length, f + 1){
-    style.class_second[f]("display:none");
-  }
-})
