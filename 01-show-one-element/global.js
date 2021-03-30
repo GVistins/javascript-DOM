@@ -15,11 +15,11 @@
   // 5. Also modify the DOM to hide the "More info..." link.
   
 
-
-const element_first = query.selector("#more_text_link");
-element_first.addEventListener("click", function(){
-  const text = query.selector("#more_text_content");
-  text.style("display: shown");
-  element.style("display: none");
+window.addEventListener('load', function(){
+  const element_First = query.selector("#more_text_link");
+  element_First.addEventListener("click", function(){
+    const text = query.selector("#more_text_content");
+    text.style("display: shown");
+    element.style("display: none");
+  })
 })
-
